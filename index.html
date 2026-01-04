@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>2D → 2.5D Video Converter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f0f0f;
+      color: #fff;
+      text-align: center;
+      padding: 30px;
+    }
+    button {
+      background: #00ffaa;
+      color: #000;
+      border: none;
+      padding: 15px 25px;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+    .card {
+      max-width: 700px;
+      margin: auto;
+      background: #1a1a1a;
+      padding: 25px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="card">
+  <h1>2D → 2.5D Video Converter</h1>
+  <p>
+    Turn any 2D video into a cinematic 2.5D depth illusion using AI depth
+    and window-style effects.
+  </p>
+
+  <video width="100%" controls>
+    <source src="demo.mp4" type="video/mp4">
+  </video>
+
+  <br><br>
+
+  <button onclick="openColab()">
+    Convert Video (Free – Google Colab)
+  </button>
+
+  <p style="margin-top:20px; font-size:14px; color:#aaa;">
+    Runs on your Google account. No uploads to our server.
+  </p>
+</div>
+
+<script>
+function openColab(){
+  window.open(
+    "https://colab.research.google.com/github/YOUR_USERNAME/YOUR_REPO/blob/main/2d_to_2.5d.ipynb",
+    "_blank"
+  );
+}
+</script>
+
+</body>
+</html>
